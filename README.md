@@ -27,7 +27,7 @@ L'intégration des MCP apporte plusieurs avantages stratégiques :
 
 ## Technologies Potentielles
 
-*   Python 3.x
+*   Python 3.13.2
 *   Frameworks RAG (ex: LangChain)
 *   Bibliothèques d'accès API (ex: requests, aiohttp)
 *   Concepts d'API Gateway / Sécurité (Zero Trust)
@@ -36,9 +36,9 @@ L'intégration des MCP apporte plusieurs avantages stratégiques :
 
 ## Prérequis
 
-*   Python >= 3.9 (à ajuster)
+*   Python >= 3.13.2
 *   Git
-*   Un gestionnaire d'environnement virtuel (venv, conda)
+*   Un gestionnaire d'environnement virtuel (venv)
 
 ## Installation
 
