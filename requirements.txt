@@ -1,0 +1,36 @@
+# Fichier de dépendances pour le projet Intégration des MCP
+# Installez ces dépendances avec : pip install -r requirements.txt
+
+# --- Core Frameworks (Basé sur les fondamentaux techniques) ---
+# LangChain est souvent utilisé pour les RAG et l'orchestration
+langchain==0.1.16       # Remplacez par la version stable actuelle ou nécessaire
+langchain-core==0.1.45  # Composants de base
+# langchain-community, langchain-openai, etc. pourraient être ajoutés selon les besoins
+
+# --- API Interaction ---
+requests==2.31.0        # Pour les appels API synchrones simples
+aiohttp==3.9.3          # Pour les appels API asynchrones (AsyncIO mentionné)
+
+# --- Data Validation (Souvent utile avec LangChain/APIs) ---
+pydantic==2.8.0         # Validation de données robuste
+
+# --- Evaluation Framework (Mentionné dans les fondamentaux) ---
+ragas==0.1.7            # Pour évaluer la qualité RAG
+
+# --- Potentiel pour le prototype d'API (si nécessaire) ---
+# fastapi==0.110.0      # Framework API rapide (si vous créez une API pour l'orchestrateur)
+# uvicorn[standard]==0.29.0 # Serveur ASGI pour FastAPI
+
+# --- Autres Utilitaires (Exemples) ---
+# python-dotenv==1.0.1    # Pour charger les variables d'environnement depuis .env
+# PyYAML==6.0.1           # Si vous utilisez des fichiers de config YAML
+
+# --- Outils de Développement/Test (Optionnel, peuvent aller dans dev-requirements.txt) ---
+# pytest==8.1.1           # Framework de test
+# flake8==7.0.0           # Linter de code Python
+# black==24.4.0           # Formatteur de code Python
+
+# NOTE: Les versions ci-dessus sont des exemples à la date de rédaction.
+# Utilisez `pip freeze > requirements.txt` pour capturer les versions exactes
+# installées dans votre environnement virtuel une fois que vous avez installé
+# ce dont vous avez besoin [4, 5, 7].

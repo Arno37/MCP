@@ -1,0 +1,65 @@
+# --- Python ---
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Virtual Environments ---
+# Common virtual environment directory names
+venv/
+.venv/
+env/
+.env/
+ENV/
+pip-env/
+
+# --- IDE / Editor Files ---
+# VS Code
+.vscode/
+# PyCharm
+.idea/
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+
+# --- Build / Distribution Artifacts ---
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+*.tar.gz
+*.zip
+
+# --- Testing ---
+# Coverage reports
+htmlcov/
+.coverage
+# Pytest cache
+.pytest_cache/
+
+# --- Logs and Runtime Files ---
+*.log
+*.log.*
+*.tmp
+
+# --- Configuration / Sensitive Data ---
+# Environment variables file (NEVER commit secrets!)
+.env
+# Common configuration files that might contain secrets
+config.ini
+secrets.yaml
+credentials.json
+
+# --- OS Specific Files ---
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+
+# --- Documentation build outputs ---
+# Example for Sphinx
+docs/_build/
+
