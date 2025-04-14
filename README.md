@@ -70,7 +70,8 @@ Instructions sur comment lancer le prototype, exécuter les tests, ou utiliser l
 
 ## Structure du Projet
 
-```MCP/
+```
+MCP/
 │
 ├── .gitignore
 ├── LICENSE
