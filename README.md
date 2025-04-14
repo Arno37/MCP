@@ -70,7 +70,7 @@ Instructions sur comment lancer le prototype, exécuter les tests, ou utiliser l
 
 ## Structure du Projet
 
-intégration-des-MCP/
+```MCP/
 │
 ├── .gitignore
 ├── LICENSE
@@ -82,6 +82,7 @@ intégration-des-MCP/
 ├── src/ # Code source du prototype (orchestrateur, gateway)
 ├── tests/ # Tests unitaires, d'intégration et d'évaluation
 └── docs/ # Rapports, guides et documentation finale
+```
 
 
 ## Livrables Attendus
