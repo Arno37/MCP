@@ -27,7 +27,7 @@ L'intégration des MCP apporte plusieurs avantages stratégiques :
 
 ## Technologies Potentielles
 
-*   Python 3.x
+*   Python 3.13.2
 *   Frameworks RAG (ex: LangChain)
 *   Bibliothèques d'accès API (ex: requests, aiohttp)
 *   Concepts d'API Gateway / Sécurité (Zero Trust)
@@ -36,9 +36,9 @@ L'intégration des MCP apporte plusieurs avantages stratégiques :
 
 ## Prérequis
 
-*   Python >= 3.9 (à ajuster)
+*   Python >= 3.13.2
 *   Git
-*   Un gestionnaire d'environnement virtuel (venv, conda)
+*   Un gestionnaire d'environnement virtuel (venv)
 
 ## Installation
 
@@ -70,7 +70,8 @@ Instructions sur comment lancer le prototype, exécuter les tests, ou utiliser l
 
 ## Structure du Projet
 
-intégration-des-MCP/
+```
+MCP/
 │
 ├── .gitignore
 ├── LICENSE
@@ -82,6 +83,7 @@ intégration-des-MCP/
 ├── src/ # Code source du prototype (orchestrateur, gateway)
 ├── tests/ # Tests unitaires, d'intégration et d'évaluation
 └── docs/ # Rapports, guides et documentation finale
+```
 
 
 ## Livrables Attendus
