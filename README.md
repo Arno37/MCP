@@ -93,4 +93,3 @@ MCP/
 3.  Prototype fonctionnel de l'orchestrateur MCP.
 4.  Jeu de test pour l'évaluation de la valeur ajoutée.
 5.  Guide d'implémentation par profil client.
-
