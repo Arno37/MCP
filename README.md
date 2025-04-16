@@ -85,6 +85,9 @@ MCP/
 └── docs/ # Rapports, guides et documentation finale
 ```
 
+## Architecture RAG et Multi-RAG
+
+![Architecture RAG et Multi-RAG](39519578.webp)
 
 ## Livrables Attendus
 
