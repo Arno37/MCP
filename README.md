@@ -1,3 +1,4 @@
+<img src="39519578.webp" alt="Architecture RAG et Multi-RAG" width="600">
 # Intégration des MCP pour Sources d'Information Hybrides
 
 ## Contexte
@@ -84,10 +85,6 @@ MCP/
 ├── tests/ # Tests unitaires, d'intégration et d'évaluation
 └── docs/ # Rapports, guides et documentation finale
 ```
-
-## Architecture RAG et Multi-RAG
-
-![Architecture RAG et Multi-RAG](39519578.webp)
 
 ## Livrables Attendus
 
