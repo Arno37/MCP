@@ -1,0 +1,16 @@
+Questions Fréquentes (FAQ)
+
+Q: Comment puis-je réinitialiser mon mot de passe ?
+R: Allez dans les paramètres de votre compte et cliquez sur "Mot de passe oublié".
+
+Q: Quelle est la politique de remboursement ?
+R: Nous offrons un remboursement sous 30 jours sans questions.
+
+Q: Comment contacter le support ?
+R: Envoyez un email à support@exemple.com ou appelez le +33 1 23 45 67 89.
+
+Q: Quels sont les horaires d'ouverture ?
+R: Notre support est disponible du lundi au vendredi, de 9h à 18h.
+
+Q: Comment mettre à jour mon abonnement ?
+R: Connectez-vous à votre espace client et allez dans la section "Abonnement".

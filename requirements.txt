@@ -34,3 +34,17 @@ ragas==0.1.7            # Pour évaluer la qualité RAG
 # Utilisez `pip freeze > requirements.txt` pour capturer les versions exactes
 # installées dans votre environnement virtuel une fois que vous avez installé
 # ce dont vous avez besoin [4, 5, 7].
+
+PyPDF2==3.0.1
+python-docx==0.8.11
+sentence-transformers==2.0.0
+annoy==1.17.3
+numpy==1.24.3
+torch==2.0.0
+torchvision==0.15.0
+transformers==4.30.0
+scikit-learn==1.3.2 # Pour cosine_similarity
+spacy==3.7.2
+
+# Note: Après l'installation, exécuter :
+# python -m spacy download fr_core_news_md
