@@ -1,3 +1,4 @@
+
 # Intégration des MCP pour Sources d'Information Hybrides
 
 ## Contexte
@@ -85,9 +86,9 @@ MCP/
 └── docs/ # Rapports, guides et documentation finale
 ```
 
-## Architecture RAG et Multi-RAG
+## Architecture RAG
 
-![Architecture RAG et Multi-RAG](39519578.webp)
+![Architecture RAG](docs/Raga-retrieval-augmented-generation-and-actions.png.webp)
 
 ## Livrables Attendus
 
