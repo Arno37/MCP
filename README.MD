@@ -1,0 +1,1 @@
+<img src="docs/MCP_learning_center_image_1-min__1_.png" alt="Architecture RAG" width="500"/>
