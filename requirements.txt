@@ -48,3 +48,5 @@ spacy==3.7.2
 
 # Note: Après l'installation, exécuter :
 # python -m spacy download fr_core_news_md
+
+Flask==3.0.3 # Pour créer les serveurs simples de la démo MCP
