@@ -1,4 +1,3 @@
-
 # Intégration des MCP pour Sources d'Information Hybrides
 
 ## Contexte
@@ -85,10 +84,6 @@ MCP/
 ├── tests/ # Tests unitaires, d'intégration et d'évaluation
 └── docs/ # Rapports, guides et documentation finale
 ```
-
-## Architecture RAG
-
-![Architecture RAG](docs/Raga-retrieval-augmented-generation-and-actions.png.webp)
 
 ## Livrables Attendus
 
