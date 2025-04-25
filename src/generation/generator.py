@@ -93,22 +93,41 @@ def generate_response_ollama(
 def build_prompt(question: str, context_chunks: List[Dict[str, Any]]) -> str:
     """
     Construit le prompt pour le LLM en combinant la question et le contexte.
+    Distingue les sources locales (ex: README) des sources externes (ex: Web Search).
     Adaptez ce prompt selon les besoins et le modèle utilisé (Mistral ici).
     """
     
-    context = "\n\n".join([chunk['content'] for chunk in context_chunks])
+    local_context_str = ""
+    web_context_str = ""
     
-    # Prompt simple pour Mistral (peut être amélioré)
-    # Note: Mistral fonctionne bien avec des instructions claires.
-    prompt = f"""Contexte:
-{context}
+    # Séparation des contextes basé sur les métadonnées
+    for chunk in context_chunks:
+        source = chunk.get("metadata", {}).get("source", "inconnu").lower()
+        content = chunk.get("content", "")
+        
+        if source == "readm": # Ou une clé plus spécifique si définie dans VectorStore
+            local_context_str += f"- {content}\n"
+        elif source == "bravesearch":
+            url = chunk.get("metadata", {}).get("url", "URL inconnue")
+            web_context_str += f"- Source Web ({url}): {content}\n"
+        else: # Contexte local par défaut si la source n'est pas "BraveSearch"
+             local_context_str += f"- {content}\n"
 
-Question: {question}
+    # Construction du prompt final
+    prompt = f"""Tu es un assistant IA expert en analyse et recherche d'information.
 
-En te basant uniquement sur le contexte fourni ci-dessus, réponds à la question de manière concise. Si le contexte ne permet pas de répondre, dis-le clairement.
+### Contexte Local (ex: Documents Internes):
+{(local_context_str if local_context_str else "Aucun contexte local fourni.")}
+### Contexte Web (Résultats de Recherche Externe):
+{(web_context_str if web_context_str else "Aucun contexte web fourni.")}
+### Question:
+{question}
+
+### Instructions:
+En te basant UNIQUEMENT sur le Contexte Local et/ou le Contexte Web fournis ci-dessus, réponds à la question de manière concise. Indique si l'information provient du contexte local ou web si possible. Si aucun contexte ne permet de répondre, dis-le clairement.
 Réponse:"""
     
-    logger.debug(f"Prompt construit (longueur: {len(prompt)}):\n{prompt[:300]}...") # Log tronqué
+    logger.debug(f"Prompt construit (longueur: {len(prompt)}):\n{prompt[:500]}...") # Log tronqué un peu plus long
     return prompt
 
 # Pour ajouter le __init__.py nécessaire pour que src/generation soit un package
