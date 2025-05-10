@@ -3,7 +3,7 @@
 
 # --- Core Frameworks (Basé sur les fondamentaux techniques) ---
 # LangChain est souvent utilisé pour les RAG et l'orchestration
-langchain==0.1.16       # Remplacez par la version stable actuelle ou nécessaire
+langchain==0.2.5       # Remplacez par la version stable actuelle ou nécessaire
 langchain-core==0.1.45  # Composants de base
 # langchain-community, langchain-openai, etc. pourraient être ajoutés selon les besoins
 
